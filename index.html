@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoboKids — robotics school for children from 6 years old. Lego, Arduino and Python courses.">
+  <title>RoboKids — Children's Robotics School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="RoboKids home">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <span>RoboKids</span>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Toggle menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#programs">Programs</a>
+      <a href="#prices">Prices</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+
+    <a class="phone" href="tel:+77271234567">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      <span>+7 (727) 123-45-67</span>
+    </a>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Raising Engineers <em>from 6 Years Old</em></h1>
+      <p>Hands-on robotics classes in small groups: build, program and launch your own robots.</p>
+      <a class="cta" href="#signup">Sign Up for a Trial Lesson</a>
+    </section>
+
+    <section class="programs" id="programs" aria-labelledby="programs-title">
+      <h2 id="programs-title">Our Programs</h2>
+      <p class="section-lead">Three directions, matched to the child's age.</p>
+
+      <article class="card">
+        <img src="images/lego.svg" alt="" width="96" height="96">
+        <h3>Lego Modeling</h3>
+        <p class="age">Ages 6–8</p>
+        <p>Build moving models, learn gears, levers and the first steps of block programming.</p>
+        <p class="schedule">Mon &amp; Wed, 16:00</p>
+      </article>
+
+      <article class="card">
+        <img src="images/arduino.svg" alt="" width="96" height="96">
+        <h3>Arduino Microcontrollers</h3>
+        <p class="age">Ages 9–11</p>
+        <p>Wire sensors, LEDs and motors, and bring your own smart devices to life.</p>
+        <p class="schedule">Tue &amp; Thu, 17:00</p>
+      </article>
+
+      <article class="card">
+        <img src="images/python.svg" alt="" width="96" height="96">
+        <h3>Python</h3>
+        <p class="age">Ages 12–14</p>
+        <p>Write real code, control robots and create your first games and automation scripts.</p>
+        <p class="schedule">Sat, 11:00</p>
+      </article>
+    </section>
+
+    <section class="prices" id="prices" aria-labelledby="prices-title">
+      <h2 id="prices-title">Prices</h2>
+
+      <article class="price-card">
+        <h3>Trial lesson</h3>
+        <p class="price">Free</p>
+        <p>60 minutes, meet the teacher and build a first robot.</p>
+      </article>
+
+      <article class="price-card featured">
+        <h3>Monthly</h3>
+        <p class="price">25 000 ₸</p>
+        <p>8 lessons per month, materials included.</p>
+      </article>
+
+      <article class="price-card">
+        <h3>Term</h3>
+        <p class="price">65 000 ₸</p>
+        <p>3 months, save 15% and keep your robot.</p>
+      </article>
+    </section>
+
+    <section class="signup" id="signup" aria-labelledby="signup-title">
+      <h2 id="signup-title">Sign Up for a Trial Lesson</h2>
+      <p class="section-lead">Leave your contacts and we will call you within one day.</p>
+
+      <form action="#" method="post">
+        <label for="name">Applicant's Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" minlength="2" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00" pattern="[+0-9 ()\-]{10,}" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="parent@example.com" required>
+
+        <label for="age">Child's Age</label>
+        <input type="number" id="age" name="age" placeholder="6–14" min="6" max="14" required>
+
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="" selected disabled>Choose a course</option>
+          <option value="lego">Lego Modeling (6–8)</option>
+          <option value="arduino">Arduino Microcontrollers (9–11)</option>
+          <option value="python">Python (12–14)</option>
+        </select>
+
+        <button type="submit">Send Application</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section aria-labelledby="footer-contacts">
+      <h2 id="footer-contacts">Contacts</h2>
+      <address>
+        Almaty, Abay Ave. 10<br>
+        Mon–Sat, 10:00–20:00
+      </address>
+      <iframe title="School location map"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=76.9%2C43.22%2C76.98%2C43.27&amp;layer=mapnik"
+        loading="lazy"></iframe>
+    </section>
+
+    <nav aria-label="Footer navigation">
+      <h2>Navigate</h2>
+      <a href="#programs">Programs</a>
+      <a href="#prices">Prices</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+
+    <section aria-labelledby="footer-social">
+      <h2 id="footer-social">Messengers</h2>
+      <a href="https://t.me/robokids_demo">Telegram</a>
+      <a href="https://wa.me/77271234567">WhatsApp</a>
+      <a href="https://instagram.com/robokids_demo">Instagram</a>
+
+      <label class="theme-switch" for="theme-toggle">
+        <input type="checkbox" id="theme-toggle">
+        <span class="track" aria-hidden="true"></span>
+        <span>Dark mode</span>
+      </label>
+    </section>
+
+    <p class="legal">© 2026 RoboKids LLP. All rights reserved. Educational license No. 000000. <a href="#top">Privacy policy</a></p>
+  </footer>
+
+</body>
+</html>
