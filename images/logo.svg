@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RoboKids logo">
+  <rect x="6" y="14" width="52" height="40" rx="16" fill="#1d4ed8"/>
+  <rect x="14" y="22" width="36" height="22" rx="10" fill="#0f172a"/>
+  <circle cx="25" cy="33" r="5" fill="#38bdf8"/>
+  <circle cx="39" cy="33" r="5" fill="#38bdf8"/>
+  <line x1="32" y1="14" x2="32" y2="6" stroke="#1d4ed8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="6" r="4" fill="#ea580c"/>
+</svg>
