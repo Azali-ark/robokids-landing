@@ -7,7 +7,7 @@
   --muted: #475569;
   --primary: #1d4ed8;
   --on-primary: #ffffff;
-  --accent: #ea580c;
+  --accent: #c2410c;
   --on-accent: #ffffff;
   --border: #cbd5e1;
   --valid: #15803d;
@@ -167,7 +167,7 @@ h3 { font-size: 1.25rem; }
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 0.5rem 1.5rem rgba(234, 88, 12, 0.45);
+  box-shadow: 0 0.5rem 1.5rem rgba(194, 65, 12, 0.45);
   transition: transform 0.2s;
 }
 .cta:hover, .cta:focus-visible { transform: translateY(-0.2rem) scale(1.02); }
